@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+
+# misc
+.DS_Store
+
+styles.css
+template.html
+filtering.html
+script.js
+
+/src
