@@ -12661,19 +12661,19 @@ a.white:hover {
   color: #463434;
 }
 
-.jumbo h1, .jumbo .h1, .jumbo h4, .jumbo .h4 {
+.jumbotron h1, .jumbotron .h1, .jumbotron h4, .jumbotron .h4 {
   font-family: "Fredoka", sans-serif;
   font-weight: 100;
 }
 
-.jumbo h1, .jumbo .h1 {
+.jumbotron h1, .jumbotron .h1 {
   line-height: 3.75rem;
   font-size: 2.5rem;
   margin-top: 1.375rem;
   margin-bottom: 1rem;
 }
 
-.jumbo p {
+.jumbotron p {
   font-weight: 300;
   margin-bottom: 5.5%;
 }
@@ -12843,11 +12843,70 @@ ul {
   color: #555555;
 }
 
+.project-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  height: 100%;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.project-info {
+  color: transparent;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  transition: 0.3s ease-in-out;
+}
+
+.project-item img {
+  transition: 0.3s transform ease;
+  z-index: 1;
+}
+
+.project-item:hover > a > .project-info {
+  color: #FFF;
+  transform: translateY(-17%);
+}
+
+.project-item:hover > a > img {
+  transform: scale(1.05);
+}
+
+.project-item:hover > a > .img-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.project-info h3, .project-info .h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.project-info span {
+  font-size: 0.875rem;
+  letter-spacing: 0.13rem;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.project-info p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
 .proj-img {
   border: 1px solid #eeeeee;
 }
 
-/* PHONE */
 @media (max-width: 767px) {
   .home {
     height: 120vh;
@@ -12855,7 +12914,7 @@ ul {
 }
 @media (min-width: 768px) {
   .jumbotron {
-    padding: 7.031rem 3.75rem 4.688rem 3.75rem;
+    padding: 112.5px 60px 75px 60px;
   }
   .jumbotron h1, .jumbotron .h1 {
     font-size: 5rem;
@@ -12866,23 +12925,6 @@ ul {
     margin-bottom: 2.75rem;
   }
   .jumbotron p {
-    font-size: 1.375rem;
-    font-weight: 200;
-    line-height: 2.3rem;
-    margin-bottom: 1.968rem;
-  }
-  .jumbo {
-    padding: 112.5px 60px 75px 60px;
-  }
-  .jumbo h1, .jumbo .h1 {
-    font-size: 5rem;
-    margin-bottom: 2rem;
-  }
-  .jumbo h4, .jumbo .h4 {
-    font-size: 2.5rem;
-    margin-bottom: 2.75rem;
-  }
-  .jumbo p {
     font-size: 1.375rem;
     line-height: 1.8;
     margin-bottom: 1.968rem;
@@ -12902,25 +12944,15 @@ ul {
     font-weight: 300;
     margin-bottom: 2.66rem;
   }
-  .jumbo {
-    padding: 9.094rem 3.75rem 6.063rem 3.75rem;
-  }
-  .jumbo h4, .jumbo .h4 {
-    margin-bottom: 2.75rem;
-  }
-  .jumbo p {
-    font-weight: 300;
-    margin-bottom: 2.66rem;
-  }
   .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .jumbo {
+  .jumbotron {
     padding: 10.969rem 3.75rem 7.313rem 3.75rem;
   }
-  .jumbo p {
+  .jumbotron p {
     margin-bottom: 5%;
   }
   .container {
