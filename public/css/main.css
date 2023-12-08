@@ -12915,8 +12915,8 @@ ul {
   display: none;
 }
 
-.grid {
-  transition: 0.3s transform ease;
+.item {
+  transition: transform 2s ease;
 }
 
 @media (max-width: 767px) {
