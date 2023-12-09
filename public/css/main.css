@@ -12831,7 +12831,7 @@ footer {
 
 p.lead {
   margin-bottom: 22px;
-  margin-top: 12px;
+  margin-top: 11px;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.4;
@@ -12945,6 +12945,9 @@ ul {
   }
   .container {
     width: 750px;
+  }
+  p.lead {
+    font-size: 24px;
   }
 }
 @media (min-width: 992px) {
