@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <script defer src="script.js"></script>
     <title>Bridget Pivac - Senior UX/UI designer</title>
   </head>
   <body>
@@ -39,17 +38,37 @@
           <div class="col-4 order-1 order-lg-2">
             <h2>Projects</h2>
           </div>
-          <div class="col-12 order-2 order-lg-1 text-end mb-4 mb-lg-0 filters">
-            <a class="link" href="#" data-filter="*">All</a>
-            <a class="link" href="#" data-filter="ux">UX</a>
-            <a class="link" href="#" data-filter="ui">UI</a>
-            <a class="link" href="#" data-filter="conceptart">Concept Art</a>
-            <a class="link" href="#" data-filter="games">Games</a>
-            <a class="link" href="#" data-filter="branding">Branding</a>
+
+          <div class="col-12 order-2 order-lg-1 text-end mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div id="filters">
+              <a class="link" href="#" data-filter="*">All</a>
+              <a class="link" href="#" data-filter=".ux">UX</a>
+              <a class="link" href="#" data-filter=".ui">UI</a>
+              <a class="link" href="#" data-filter=".conceptart">Concept Art</a>
+              <a class="link" href="#" data-filter=".games">Games</a>
+              <a class="link" href="#" data-filter=".branding">Branding</a>
+            </div>
           </div>
         </div>
 
-        <div class="row text center grid" id="portfolio-grid">
+        <div class="row text center grid" id="portfolio-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 col-lg-4 mb-6 px-3 item conceptart games space"> 
+            <div class="project-item">
+              <a href="project-critter.html" class="">
+                <div class="img-overlay"></div>
+                <div class="project-info">
+                  <h3>Critters</h3>
+                  <span>CONCEPT ART, GAMES</span>
+                  <p>VR game</p>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="images/projects/critter-tile.png"
+                  alt="" />
+              </a>
+            </div>
+          </div>
+
           <div class="col-md-6 col-lg-4 mb-6 px-3 item conceptart games">
             <div class="project-item">
               <a href="project-basketbaby.html" class="">
@@ -236,7 +255,6 @@
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -282,5 +300,7 @@
         </div>
       </div>
     </footer>
+    <script defer src="script.js"></script>
+    <script defer src="isotope.pkgd.min.js"></script>
   </body>
 </html>

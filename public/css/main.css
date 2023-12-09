@@ -12831,6 +12831,7 @@ footer {
 
 p.lead {
   margin-bottom: 22px;
+  margin-top: 12px;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.4;
@@ -12911,12 +12912,13 @@ ul {
   border: 1px solid #eeeeee;
 }
 
-.hide {
-  display: none;
+.external {
+  color: rgba(80, 0, 105, 0.7);
 }
 
-.item {
-  transition: transform 2s ease;
+.external:hover {
+  color: rgba(47, 3, 61, 0.7);
+  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
